@@ -8,6 +8,7 @@ bind right:alt;cmd  push right bar-resize:screenSizeX/2
 bind left:alt;cmd   push left  bar-resize:screenSizeX/2
 bind up:alt;cmd     push up    bar-resize:screenSizeY/2
 bind down:alt;cmd   push down  bar-resize:screenSizeY/2
+bind f:alt;cmd	    push up    bar-resize:screenSizeY
 
 # Corner Bindings
 bind right:ctrl;alt;cmd corner bottom-right resize:screenSizeX/2;screenSizeY/2
@@ -28,3 +29,5 @@ bind 3:ctrl;alt         throw 2 resize
 
 # Window Hints
 bind esc:cmd hint
+
+bind esc:shift;cmd relaunch
