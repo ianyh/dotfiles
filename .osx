@@ -578,6 +578,13 @@ defaults write -app /Applications/Xcode.app IDEBuildingContinueBuildingAfterErro
 defaults write -app /Applications/Xcode.app IDEEnableLiveIssues -int 0
 
 ###############################################################################
+# Homebrew                                                                     #
+###############################################################################
+
+# Make sure Homebrew is installed
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
