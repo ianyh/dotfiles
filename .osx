@@ -573,6 +573,10 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 mkdir -p ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins;
 curl -L http://goo.gl/xfmmt | tar xv -C ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -
 
+# Enable building after errors but disable live errors.
+defaults write -app /Applications/Xcode.app IDEBuildingContinueBuildingAfterErrors -int 1
+defaults write -app /Applications/Xcode.app IDEEnableLiveIssues -int 0
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
