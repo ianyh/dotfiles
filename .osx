@@ -569,20 +569,9 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 # Xcode                                                                       #
 ###############################################################################
 
-# Install Alcatraz
-mkdir -p ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins;
-curl -L http://goo.gl/xfmmt | tar xv -C ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -
-
 # Enable building after errors but disable live errors.
 defaults write -app /Applications/Xcode.app IDEBuildingContinueBuildingAfterErrors -int 1
 defaults write -app /Applications/Xcode.app IDEEnableLiveIssues -int 0
-
-###############################################################################
-# Homebrew                                                                     #
-###############################################################################
-
-# Make sure Homebrew is installed
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 ###############################################################################
 # Kill affected applications                                                  #

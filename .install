@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Install Alcatraz
+mkdir -p ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins;
+curl -L http://goo.gl/xfmmt | tar xv -C ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -
+
+# Make sure Homebrew is installed
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+# Run brew installs
+./.brew
