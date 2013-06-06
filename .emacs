@@ -20,3 +20,7 @@
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+; Load sass mode and use it for scss files.
+(autoload 'sass-mode "sass-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . sass-mode))
