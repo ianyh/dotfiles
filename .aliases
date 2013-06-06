@@ -20,6 +20,9 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+# Use emacs-24.3
+alias emacs="emacs-24.3"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"

@@ -13,6 +13,8 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install findutils
 # Install Bash 4
 brew install bash
+# Install Emacs 24
+brew install emacs
 
 # Install wget with IRI support
 brew install wget --enable-iri
