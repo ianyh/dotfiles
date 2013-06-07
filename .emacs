@@ -4,6 +4,9 @@
 ; Use an 80 character column
 (setq-default fill-column 80)
 
+; Don't use tabs
+(setq-default indent-tabs-mode nil)
+
 ; Use .Trash for backup files
 (setq backup-directory-alist '((".*" . "~/.Trash")))
 
@@ -24,3 +27,6 @@
 ; Load sass mode and use it for scss files.
 (autoload 'sass-mode "sass-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . sass-mode))
+
+; Use ruby mode for Podfiles
+(add-to-list 'auto-mode-alist '("Podfile\\'" . ruby-mode))
