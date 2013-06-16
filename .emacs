@@ -25,8 +25,12 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ; Load sass mode and use it for scss files.
-(autoload 'sass-mode "sass-mode")
+(autoload 'sass-mode "sass-mode" "Major mode for editing sass" t)
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . sass-mode))
 
-; Use ruby mode for Podfiles
+; Use ruby mode for Podfiles and Rakefiles
 (add-to-list 'auto-mode-alist '("Podfile\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))
+
+; Load json mode
+(autoload 'json-mode "json-mode" "Major mode for editing json" t)
