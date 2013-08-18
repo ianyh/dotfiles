@@ -1,6 +1,11 @@
 {
     "layouts": [
         "tall",
-        "fullscreen"
-        ]
+        "fullscreen",
+        "column",
+        ],
+
+    "floating": [
+        "com.adobe.Photoshop"
+    ]
 }
