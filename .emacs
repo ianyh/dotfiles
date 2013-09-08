@@ -34,3 +34,7 @@
 
 ; Load json mode
 (autoload 'json-mode "json-mode" "Major mode for editing json" t)
+
+; Load php mode
+(autoload 'php-mode "php-mode" "Major mode for editing PHP" t)
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
