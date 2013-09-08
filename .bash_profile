@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$PATH"
 
 # Use homebrew's rbenv root
 export RBENV_ROOT=/usr/local/var/rbenv
