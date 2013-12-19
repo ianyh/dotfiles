@@ -19,21 +19,6 @@ brew install emacs
 # Install wget with IRI support
 brew install wget --enable-iri
 
-# Install RingoJS and Narwhal
-# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
-# Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
-brew install php54
-
-# These two formulae didn’t work well last time I tried them:
-#brew install homebrew/dupes/vim
-#brew install homebrew/dupes/screen
-
 # Install other useful binaries
 brew install ack
 #brew install exiv2
@@ -69,32 +54,32 @@ installcask adium
 #installcask bartender
 installcask caffeine
 #installcask clarify
-installcask dashlane
+#installcask dashlane
 installcask dropbox
-installcask enjoy
+#installcask enjoy
 installcask f-lux
-installcask github
-installcask google-chrome
-installcask google-chrome-canary
+#installcask github
+#installcask google-chrome
+#installcask google-chrome-canary
 #installcask hands-off
-installcask hip-chat
+#installcask hip-chat
 #installcask imagealpha
 #installcask imageoptim
 #installcask iterm2
 #installcask miro-video-converter
-installcask mou
+#installcask mou
 installcask notational-velocity
-installcask shortcat
+#installcask shortcat
 installcask skitch
-installcask slate
-installcask sublime-text
+#installcask slate
+#installcask sublime-text
 installcask the-unarchiver
-installcask tor-browser
+#installcask tor-browser
 installcask transmission
 #installcask ukelele
 #installcask virtualbox
 installcask vlc
-installcask xtra-finder
+#installcask xtra-finder
 
 # Remove outdated versions from the cellar
 brew cleanup
