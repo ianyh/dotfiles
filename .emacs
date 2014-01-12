@@ -4,6 +4,9 @@
 ; Use an 80 character column
 (setq-default fill-column 80)
 
+; Use 2 character indent for javascript
+(setq-default js-indent-level 2)
+
 ; Don't use tabs
 (setq-default indent-tabs-mode nil)
 
