@@ -1,5 +1,8 @@
 ; Load up custom local elisp
 (add-to-list 'load-path (expand-file-name "~/bin/el"))
+(add-to-list 'load-path (expand-file-name "~/bin/el/scala-mode2"))
+
+(require 'scala-mode2)
 
 ; Use an 80 character column
 (setq-default fill-column 80)
@@ -41,3 +44,7 @@
 ; Load php mode
 (autoload 'php-mode "php-mode" "Major mode for editing PHP" t)
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+
+; Load scala mode
+(autoload 'scala-mode "scala-mode" "Major mode for editing Scala" t)
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))

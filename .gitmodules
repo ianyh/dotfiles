@@ -1,0 +1,3 @@
+[submodule "bin/el/scala-mode2"]
+	path = bin/el/scala-mode2
+	url = git://github.com/hvesalai/scala-mode2.git
