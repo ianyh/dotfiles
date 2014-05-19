@@ -1,8 +1,14 @@
 ; Load up custom local elisp
 (add-to-list 'load-path (expand-file-name "~/bin/el"))
+(add-to-list 'load-path (expand-file-name "~/bin/el/scala-mode2"))
+
+(require 'scala-mode2)
 
 ; Use an 80 character column
 (setq-default fill-column 80)
+
+; Use 2 character indent for javascript
+(setq-default js-indent-level 2)
 
 ; Don't use tabs
 (setq-default indent-tabs-mode nil)
@@ -50,3 +56,7 @@
 ; Load slim mode
 (autoload 'slim-mode "slim-mode" "Major mode for editing slim templates" t)
 (add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
+
+; Load scala mode
+(autoload 'scala-mode "scala-mode" "Major mode for editing Scala" t)
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
