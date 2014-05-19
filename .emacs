@@ -7,6 +7,9 @@
 ; Don't use tabs
 (setq-default indent-tabs-mode nil)
 
+; Display tabs as width 2
+(setq tab-width 2)
+
 ; Use .Trash for backup files
 (setq backup-directory-alist '((".*" . "~/.Trash")))
 
@@ -38,3 +41,12 @@
 ; Load php mode
 (autoload 'php-mode "php-mode" "Major mode for editing PHP" t)
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+
+; Load web mode
+(autoload 'web-mode "web-mode" "Major mode for editing web app templates" t)
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+; Load slim mode
+(autoload 'slim-mode "slim-mode" "Major mode for editing slim templates" t)
+(add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
