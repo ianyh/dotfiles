@@ -2,8 +2,6 @@
 (add-to-list 'load-path (expand-file-name "~/bin/el"))
 (add-to-list 'load-path (expand-file-name "~/bin/el/scala-mode2"))
 
-(require 'scala-mode2)
-
 ; Use an 80 character column
 (setq-default fill-column 80)
 
@@ -61,6 +59,3 @@
 (autoload 'slim-mode "slim-mode" "Major mode for editing slim templates" t)
 (add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
 
-; Load scala mode
-(autoload 'scala-mode "scala-mode" "Major mode for editing Scala" t)
-(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
