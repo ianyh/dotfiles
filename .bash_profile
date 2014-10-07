@@ -1,7 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="/usr/local/bin:/usr/local/share/npm/bin:$HOME/bin:$PATH"
-
-export PATH="$(ruby -rubygems -e 'puts Gem.bindir'):$PATH"
+export PATH="/usr/local/bin:$(ruby -rubygems -e 'puts Gem.bindir'):/usr/local/share/npm/bin:$HOME/bin:$PATH"
 
 # Use homebrew's rbenv root
 export RBENV_ROOT=/usr/local/var/rbenv
