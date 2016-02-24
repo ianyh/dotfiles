@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+exit
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -7,10 +9,10 @@ brew update
 brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+#brew install coreutils
+#echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+#brew install findutils
 # Install Bash 4
 brew install bash
 # Install Emacs 24
@@ -20,17 +22,17 @@ brew install emacs
 brew install wget --enable-iri
 
 # Install other useful binaries
-brew install ack
+#brew install ack
 #brew install exiv2
 brew install git
-brew install imagemagick
-brew install node
-brew install pigz
-brew install rename
-brew install rhino
-brew install tree
-brew install webkit2png
-brew install zopfli
+#brew install imagemagick
+#brew install node
+#brew install pigz
+#brew install rename
+#brew install rhino
+#brew install tree
+#brew install webkit2png
+#brew install zopfli
 brew install rbenv
 brew install ruby-build
 
