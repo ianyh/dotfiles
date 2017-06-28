@@ -23,7 +23,7 @@ brew upgrade
 # running `chsh`. To do so, run `sudo chsh -s /usr/local/bin/bash`.
 brew install bash
 # brew tap homebrew/versions
-# brew install bash-completion2
+brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
@@ -102,6 +102,13 @@ brew install git-lfs
 # brew install vbindiff
 # brew install webkit2png
 # brew install zopfli
+
+brew install rbenv
+brew install ruby
+brew install python
+brew install carthage
+brew install swiftlint
+brew install node
 
 # Remove outdated versions from the cellar.
 brew cleanup
